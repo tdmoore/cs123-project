@@ -1,0 +1,15 @@
+Thomas Moore
+Project Proposal
+CMSC 123
+Prof. Borja Sotomayor
+April 15, 2013
+
+As a result of the investigation of Enron, the public was given access to a series of approximately 1.3 million emails with 500k attachments among 150 senders. The dataset is hosted on AWS, and apparently totals 210 GB. For my project, I would like to perform computational analysis of this dataset. I would like to discover if there are methods I can use to locate, within this haystack, emails that might be pertinent to an investigation of Enron's wrongdoing. Though Enron is the metric because of the accessibility of the dataset, my goal is to develop an application which could be used on similar datasets in the future. This would be particularly useful in the legal realm, where the law often entitles a party to a large corpus of email data, but provides no insight for how to process it.
+
+One key analysis I intend to perform is creation and study of a network of e-mails based on sender, recipient, frequency, and perhaps other factors. I would like to analyze who sends e-mail to whom within an organization such as Enron, and what can we learn about the structure of the organization. For example, perhaps there is a clustering within e-mails: emails are typically sent to the same group of e-mails. However, perhaps sometimes there is a break from this pattern--that may be an area which a user can examine more closely.
+
+I also am interested in searching for anomolies in language used with particular senders. For example, a CEO may use more colloquial or even vulgar language to a particular sender. This suggests that they speak as more than just business partners with the formalities associated with it, and finding those e-mails may prove beneficial in narrowing the scope of an outsiders search from over a million e-mails to a manageable number that a human can sort through.
+
+I plan to take a subset of the data and perform exploration on it in Python. I plan to use the data in EDRM (Electronic Discovery Reference Model) XML format. I will explore the data manually to get a sense of its structure and ensure that I can extract the relevant portions. I will then attempt both a networking and/or clustering analysis and a language analysis in Python; I have not yet determined which algorithms I will use. Ideally, my prototype will be able to take a random subset of the data and narrow it to a set that, to an outside observer, seem germane to an investigation. Additionally, I will produce a visualization of the e-mail patterns and statistics about the e-mail habits of each user.
+
+My goal is that the final version will be able to use similar methods through ASW to narrow a large group of e-mail to a subset that bears further investigation. At the very least, I hope to produce a visualization and statistical description of e-mail patterns of each user, as well as opportunities to search the entire dataset.
